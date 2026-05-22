@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signal Quiz - Jogo Interativo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Tela Inicial -->
         <div id="welcome-screen" class="screen active">
             <div class="logo-container">
                 <div class="logo-icon">
-                    <i class="fas fa-bolt"></i>
+                    <img src="/logo/logo.png" alt="Logo Signal Jr" class="logo-img">
                 </div>
                 <h1 class="title-animated">Signal Quiz</h1>
                 <p class="subtitle">Teste seus conhecimentos!</p>
             </div>
-            
+
             <div class="team-info">
                 <div class="team-badge">
                     <span>SIGNAL</span>
                     <small>Empresa Júnior</small>
                 </div>
             </div>
-            
+
             <button class="start-button pulse-animation" onclick="startGame()">
                 <i class="fas fa-play"></i> Iniciar Jogo
             </button>
@@ -35,7 +38,7 @@
         <!-- Tela da Roleta -->
         <div id="roulette-screen" class="screen">
             <h2 class="screen-title">Gire a Roleta!</h2>
-            
+
             <div class="roulette-container">
                 <div class="roulette-arrow">
                     <i class="fas fa-caret-down"></i>
@@ -45,11 +48,11 @@
                     <i class="fas fa-star"></i>
                 </div>
             </div>
-            
+
             <button id="spinButton" class="spin-button" onclick="spinRoulette()">
                 <i class="fas fa-sync-alt"></i> Girar Roleta
             </button>
-            
+
             <div class="selected-topic" id="selectedTopicDiv">
                 <p>Tópico selecionado: <span id="topicName">---</span></p>
             </div>
@@ -68,15 +71,15 @@
                     <span id="timer">30</span>s
                 </div>
             </div>
-            
+
             <div class="progress-bar">
                 <div class="progress-fill" id="progressFill"></div>
             </div>
-            
+
             <h3 id="question-text" class="question-text"></h3>
-            
+
             <div id="answers-container" class="answers-container"></div>
-            
+
             <div class="feedback-container" id="feedbackContainer" style="display: none;">
                 <div class="feedback-message" id="feedbackMessage"></div>
             </div>
@@ -85,16 +88,16 @@
         <!-- Tela de Resultado -->
         <div id="result-screen" class="screen">
             <h2 class="result-title">Resultado Final</h2>
-            
+
             <div class="score-circle">
                 <div class="score-number" id="finalScore">0</div>
                 <div class="score-label">pontos</div>
             </div>
-            
+
             <div class="result-message" id="resultMessage"></div>
-            
+
             <div class="result-stars" id="resultStars"></div>
-            
+
             <div class="result-buttons">
                 <button class="action-button" onclick="restartGame()">
                     <i class="fas fa-redo"></i> Jogar Novamente
@@ -108,4 +111,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
