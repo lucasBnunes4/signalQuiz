@@ -943,22 +943,25 @@ function prepareQuestions(topic) {
 
     // Clonar array de perguntas do tópico
     const allQuestions = [...questionsBank[topic]];
-    const selected = [];
-
-    // Selecionar aleatoriamente perguntas (máximo 3)
-    const count = Math.min(3, allQuestions.length);
-    for (let i = 0; i < count; i++) {
-        const randomIndex = Math.floor(Math.random() * allQuestions.length);
-        selected.push(allQuestions.splice(randomIndex, 1)[0]);
+    
+    // Embaralhar usando Fisher-Yates (algoritmo comprovadamente justo)
+    for (let i = allQuestions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
     }
-
+    
+    // Pegar as primeiras 'count' perguntas após embaralhar
+    const count = Math.min(3, allQuestions.length);
+    const selected = allQuestions.slice(0, count);
+    
     gameState.questions = selected;
     gameState.totalQuestions = selected.length;
 
     // Atualizar máximo possível de pontos acumulado
     gameState.maxPossibleScore += selected.length * 100;
 
-    console.log('Perguntas preparadas:', selected.length);
+    console.log('Perguntas preparadas (aleatório justo):', selected.length);
+    console.log('Perguntas selecionadas:', selected.map(q => q.question.substring(0, 50) + '...'));
 }
 
 // Iniciar uma pergunta específica
@@ -993,10 +996,23 @@ function startQuestion(index) {
     question.answers.forEach((answer, i) => {
         const button = document.createElement('button');
         button.className = 'answer-button';
-        button.textContent = answer;
+        
+        // ADICIONAR INDICADOR DE TECLA AQUI
+        const keyIndicator = document.createElement('span');
+        keyIndicator.className = 'key-indicator';
+        keyIndicator.textContent = i + 1; // 1, 2, 3, 4
+        button.appendChild(keyIndicator);
+        
+        // Adicionar texto da resposta
+        const answerText = document.createElement('span');
+        answerText.textContent = answer;
+        button.appendChild(answerText);
+        
         button.onclick = function () {
             checkAnswer(i, question.correct);
         };
+        button.setAttribute('title', `Pressione ${i + 1} para selecionar esta resposta`);
+        
         answersContainer.appendChild(button);
     });
 
@@ -1122,34 +1138,36 @@ function showFinalResult() {
     showScreen('result');
     const finalScore = gameState.score;
     const maxScore = gameState.maxPossibleScore || (gameState.totalQuestions * 100);
-    const percentage = maxScore > 0 ? (finalScore / maxScore) * 100 : 0;
-
+    
     // Atualizar pontuação final
     document.getElementById('finalScore').textContent = finalScore;
-
-    // Determinar mensagem e estrelas
+    
+    // NOVA ESCALA DE PONTUAÇÃO
     let message = '';
     let stars = '';
-
-    if (percentage >= 80) {
-        message = 'Excelente! Você é um expert! 🏆';
+    
+    if (finalScore >= 1301) {
+        message = 'Incrível! Você é um gênio! 🏆';
         stars = '⭐⭐⭐⭐⭐';
-    } else if (percentage >= 60) {
-        message = 'Muito bom! Continue assim! 👏';
+    } else if (finalScore >= 901) {
+        message = 'Excelente! Quase lá no topo! 🌟';
         stars = '⭐⭐⭐⭐';
-    } else if (percentage >= 40) {
-        message = 'Bom trabalho! Dá pra melhorar! 💪';
+    } else if (finalScore >= 601) {
+        message = 'Muito bom! Continue assim! 👏';
         stars = '⭐⭐⭐';
-    } else if (percentage >= 20) {
-        message = 'Continue tentando! 📚';
+    } else if (finalScore >= 301) {
+        message = 'Bom trabalho! Dá pra melhorar! 💪';
         stars = '⭐⭐';
     } else {
-        message = 'Não desista! Tente novamente! 🎯';
+        message = 'Continue tentando! Você consegue! 📚';
         stars = '⭐';
     }
-
+    
     document.getElementById('resultMessage').textContent = message;
     document.getElementById('resultStars').textContent = stars;
+    
+    // Mostrar também a pontuação máxima possível
+    console.log(`Pontuação final: ${finalScore}/${maxScore} - ${stars}`);
 }
 
 // Modal helpers
@@ -1213,3 +1231,264 @@ function restartGame() {
 
 // Log para confirmar carregamento
 console.log('script.js carregado com sucesso!');
+
+
+// ============================================
+// NAVEGAÇÃO POR TECLADO
+// ============================================
+
+// Variáveis para navegação por teclado
+let keyboardNavigation = {
+    modalOption: 0, // 0 = Continuar, 1 = Encerrar
+    modalVisible: false
+};
+
+// Listener global de teclado
+document.addEventListener('keydown', function(event) {
+    const currentScreen = gameState.currentScreen;
+    
+    // TELA DE BOAS-VINDAS - Enter para iniciar
+    if (currentScreen === 'welcome') {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            startGame();
+        }
+    }
+    
+    // TELA DA ROLETA - Enter para girar
+    else if (currentScreen === 'roulette') {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            const spinButton = document.getElementById('spinButton');
+            if (spinButton && !spinButton.disabled) {
+                spinRoulette();
+            }
+        }
+    }
+    
+    // TELA DE PERGUNTAS - Teclas 1-4 para responder
+    else if (currentScreen === 'question') {
+        const buttons = document.querySelectorAll('.answer-button');
+        
+        // Verificar se os botões ainda estão habilitados (pergunta não respondida)
+        const isAnswered = buttons.length > 0 && buttons[0].disabled;
+        
+        if (!isAnswered && buttons.length > 0) {
+            switch(event.key) {
+                case '1':
+                    event.preventDefault();
+                    if (buttons[0]) buttons[0].click();
+                    break;
+                case '2':
+                    event.preventDefault();
+                    if (buttons[1]) buttons[1].click();
+                    break;
+                case '3':
+                    event.preventDefault();
+                    if (buttons[2]) buttons[2].click();
+                    break;
+                case '4':
+                    event.preventDefault();
+                    if (buttons[3]) buttons[3].click();
+                    break;
+            }
+        }
+    }
+    
+    // TELA DE RESULTADO - Enter para jogar novamente
+    else if (currentScreen === 'result') {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            restartGame();
+        }
+    }
+    
+    // MODAL DE CONTINUAR/ENCERRAR - Setas e Enter
+    if (keyboardNavigation.modalVisible) {
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+            event.preventDefault();
+            // Alternar entre opções
+            keyboardNavigation.modalOption = keyboardNavigation.modalOption === 0 ? 1 : 0;
+            updateModalHighlight();
+        }
+        
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            if (keyboardNavigation.modalOption === 0) {
+                // Continuar
+                const continueBtn = document.getElementById('modalContinueBtn');
+                if (continueBtn) continueBtn.click();
+            } else {
+                // Encerrar
+                const finishBtn = document.getElementById('modalFinishBtn');
+                if (finishBtn) finishBtn.click();
+            }
+        }
+        
+        // Tecla ESC para encerrar
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            const finishBtn = document.getElementById('modalFinishBtn');
+            if (finishBtn) finishBtn.click();
+        }
+    }
+});
+
+// Atualizar destaque visual do modal
+function updateModalHighlight() {
+    const continueBtn = document.getElementById('modalContinueBtn');
+    const finishBtn = document.getElementById('modalFinishBtn');
+    
+    if (continueBtn && finishBtn) {
+        if (keyboardNavigation.modalOption === 0) {
+            continueBtn.style.transform = 'scale(1.1)';
+            continueBtn.style.boxShadow = '0 0 20px rgba(108, 99, 255, 0.8)';
+            continueBtn.style.border = '3px solid #6C63FF';
+            
+            finishBtn.style.transform = 'scale(1)';
+            finishBtn.style.boxShadow = 'none';
+            finishBtn.style.border = 'none';
+        } else {
+            finishBtn.style.transform = 'scale(1.1)';
+            finishBtn.style.boxShadow = '0 0 20px rgba(108, 99, 255, 0.8)';
+            finishBtn.style.border = '3px solid #6C63FF';
+            
+            continueBtn.style.transform = 'scale(1)';
+            continueBtn.style.boxShadow = 'none';
+            continueBtn.style.border = 'none';
+        }
+    }
+}
+
+// Sobrescrever funções do modal para integração com teclado
+const originalShowContinueModal = showContinueModal;
+showContinueModal = function(finalScore, maxScore) {
+    originalShowContinueModal(finalScore, maxScore);
+    keyboardNavigation.modalVisible = true;
+    keyboardNavigation.modalOption = 0; // Começar destacando "Continuar"
+    
+    // Pequeno delay para garantir que os botões foram renderizados
+    setTimeout(updateModalHighlight, 100);
+};
+
+const originalHideContinueModal = hideContinueModal;
+hideContinueModal = function() {
+    originalHideContinueModal();
+    keyboardNavigation.modalVisible = false;
+    keyboardNavigation.modalOption = 0;
+};
+
+// Adicionar indicadores visuais de teclas nos botões
+function addKeyboardIndicators() {
+    // Tela de boas-vindas
+    const startButton = document.querySelector('.start-button');
+    if (startButton) {
+        startButton.setAttribute('title', 'Pressione ENTER para iniciar');
+    }
+    
+    // Botão da roleta
+    const spinButton = document.getElementById('spinButton');
+    if (spinButton) {
+        spinButton.setAttribute('title', 'Pressione ENTER para girar');
+    }
+}
+
+
+// Adicionar indicadores no modal
+function addModalKeyboardIndicators() {
+    const continueBtn = document.getElementById('modalContinueBtn');
+    const finishBtn = document.getElementById('modalFinishBtn');
+    
+    if (continueBtn) {
+        continueBtn.setAttribute('title', 'Use ← → para navegar e ENTER para confirmar');
+    }
+    if (finishBtn) {
+        finishBtn.setAttribute('title', 'Use ← → para navegar e ENTER para confirmar');
+    }
+}
+
+// Observer para adicionar indicadores quando as telas mudam
+const screenObserver = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+            const target = mutation.target;
+            if (target.classList.contains('active')) {
+                if (target.id === 'question-screen') {
+                    setTimeout(addAnswerIndicators, 100);
+                }
+                if (target.id === 'welcome-screen') {
+                    setTimeout(addKeyboardIndicators, 100);
+                }
+                if (target.id === 'roulette-screen') {
+                    setTimeout(addKeyboardIndicators, 100);
+                }
+            }
+        }
+    });
+});
+
+// Observar mudanças nas telas
+document.querySelectorAll('.screen').forEach(screen => {
+    screenObserver.observe(screen, { attributes: true });
+});
+
+// Adicionar indicadores iniciais
+setTimeout(addKeyboardIndicators, 500);
+
+// Adicionar indicadores do modal quando ele aparecer
+const modalObserver = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+            const modal = document.getElementById('continueModal');
+            if (modal && modal.style.display === 'flex') {
+                setTimeout(addModalKeyboardIndicators, 100);
+            }
+        }
+    });
+});
+
+const modal = document.getElementById('continueModal');
+if (modal) {
+    modalObserver.observe(modal, { attributes: true });
+}
+
+// Adicionar CSS para os indicadores de teclado
+const keyboardStyle = document.createElement('style');
+keyboardStyle.textContent = `
+    .key-indicator {
+        display: inline-block;
+        background: var(--color-primary-purple, #6C63FF);
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-right: 10px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: center;
+        font-family: var(--font-secondary, 'Poppins', sans-serif);
+    }
+    
+    .answer-button:disabled .key-indicator {
+        opacity: 0.5;
+    }
+    
+    @media (max-width: 768px) {
+        .key-indicator {
+            width: 20px;
+            height: 20px;
+            font-size: 10px;
+            line-height: 20px;
+            margin-right: 8px;
+        }
+    }
+`;
+document.head.appendChild(keyboardStyle);
+
+console.log('Navegação por teclado ativada!');
+console.log('Controles:');
+console.log('- ENTER: Iniciar jogo / Girar roleta / Confirmar');
+console.log('- 1, 2, 3, 4: Selecionar respostas');
+console.log('- ← →: Navegar no modal');
+console.log('- ESC: Fechar modal');

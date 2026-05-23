@@ -543,3 +543,46 @@ h1, h2, h3, h4, h5, h6, .start-button, .spin-button, .action-button, .team-badge
     background: #EEEEEE;
     color: var(--color-gray-900);
 }
+
+/* Estilo para os indicadores de tecla nas respostas */
+.answer-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+}
+
+.key-indicator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary-purple, #660066);
+    color: white;
+    min-width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--font-secondary, 'Poppins', sans-serif);
+    flex-shrink: 0;
+}
+
+.answer-button.correct .key-indicator {
+    background: #2E7D32; /* Verde mais escuro */
+}
+
+.answer-button.wrong .key-indicator {
+    background: #C62828; /* Vermelho mais escuro */
+}
+
+.answer-button:disabled .key-indicator {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .key-indicator {
+        min-width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+}
