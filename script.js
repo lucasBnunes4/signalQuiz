@@ -1,205 +1,205 @@
 // Banco de perguntas por tópico
 const questionsBank = {
-    ConhecimentosGerais: [
-    {
-        question: "Qual é o maior país do mundo em extensão territorial?",
-        answers: ["China", "Estados Unidos", "Rússia", "Canadá"],
-        correct: 2
-    },
-    {
-        question: "Em que ano ocorreu a independência do Brasil?",
-        answers: ["1800", "1822", "1889", "1500"],
-        correct: 1
-    },
-    {
-        question: "Qual é o rio mais extenso do mundo?",
-        answers: ["Rio Nilo", "Rio Amazonas", "Rio Mississippi", "Rio Yangtzé"],
-        correct: 1
-    },
-    {
-        question: "Quem pintou a Mona Lisa?",
-        answers: ["Van Gogh", "Picasso", "Leonardo da Vinci", "Michelangelo"],
-        correct: 2
-    },
-    {
-        question: "Qual é a capital da Austrália?",
-        answers: ["Sydney", "Melbourne", "Canberra", "Brisbane"],
-        correct: 2
-    },
-    {
-        question: "Em que ano o homem pisou na Lua pela primeira vez?",
-        answers: ["1965", "1969", "1971", "1975"],
-        correct: 1
-    },
-    {
-        question: "Qual é o elemento químico mais abundante no universo?",
-        answers: ["Oxigênio", "Carbono", "Hidrogênio", "Nitrogênio"],
-        correct: 2
-    },
-    {
-        question: "Quem escreveu 'Dom Casmurro'?",
-        answers: [
-            "José de Alencar",
-            "Machado de Assis",
-            "Carlos Drummond de Andrade",
-            "Monteiro Lobato"
-        ],
-        correct: 1
-    },
-    {
-        question: "Qual é o maior oceano do mundo?",
-        answers: ["Oceano Atlântico", "Oceano Índico", "Oceano Pacífico", "Oceano Ártico"],
-        correct: 2
-    },
-    {
-        question: "Em que país surgiu a Revolução Industrial?",
-        answers: ["França", "Estados Unidos", "Alemanha", "Inglaterra"],
-        correct: 3
-    },
-    {
-        question: "Qual é o animal mais rápido do mundo?",
-        answers: ["Leopardo", "Falcão-peregrino", "Guepardo", "Águia-real"],
-        correct: 1
-    },
-    {
-        question: "Quantos estados tem o Brasil atualmente?",
-        answers: ["26", "27", "25", "28"],
-        correct: 0
-    },
-    {
-        question: "Qual foi o primeiro presidente do Brasil?",
-        answers: [
-            "Getúlio Vargas",
-            "Deodoro da Fonseca",
-            "Dom Pedro II",
-            "Juscelino Kubitschek"
-        ],
-        correct: 1
-    },
-    {
-        question: "O que significa a sigla ONU?",
-        answers: [
-            "Organização das Nações Unidas",
-            "Ordem Nacional Unificada",
-            "Organização Nacional Unida",
-            "Organização das Nações Universais"
-        ],
-        correct: 0
-    },
-    {
-        question: "Qual é o planeta mais próximo do Sol?",
-        answers: ["Vênus", "Terra", "Mercúrio", "Marte"],
-        correct: 2
-    }
-],
-    UFRRJ: [
-    {
-        question: "Em que ano foi fundada a UFRRJ?",
-        answers: ["1910", "1920", "1934", "1945"],
-        correct: 0
-    },
-    {
-        question: "Qual é o nome do campus principal da UFRRJ?",
-        answers: [
-            "Campus Nova Iguaçu",
-            "Campus Seropédica",
-            "Campus Três Rios",
-            "Campus Campos dos Goytacazes"
-        ],
-        correct: 1
-    },
-    {
-        question: "Qual era o nome original da UFRRJ quando foi fundada?",
-        answers: [
-            "Escola Superior de Agricultura",
-            "Escola Superior de Agricultura e Medicina Veterinária",
-            "Instituto Federal Rural",
-            "Universidade Rural do Brasil"
-        ],
-        correct: 1
-    },
-    {
-        question: "Em que ano a instituição foi elevada ao status de universidade?",
-        answers: ["1934", "1943", "1950", "1960"],
-        correct: 1
-    },
-    {
-        question: "Qual é o símbolo oficial da UFRRJ?",
-        answers: [
-            "Coruja",
-            "Águia",
-            "Brasão com elementos agrícolas",
-            "Leão"
-        ],
-        correct: 2
-    },
-    {
-        question: "Quantos institutos compõem a estrutura acadêmica da UFRRJ atualmente?",
-        answers: ["5", "6", "7", "8"],
-        correct: 1
-    },
-    {
-        question: "Além de Seropédica, quais outros campi a UFRRJ possui?",
-        answers: [
-            "Nova Iguaçu e Três Rios",
-            "Niterói e Petrópolis",
-            "Volta Redonda e Resende",
-            "Duque de Caxias e Belford Roxo"
-        ],
-        correct: 0
-    },
-    {
-        question: "Qual curso é considerado o mais antigo da UFRRJ?",
-        answers: [
-            "Medicina Veterinária",
-            "Agronomia",
-            "Engenharia Florestal",
-            "Zootecnia"
-        ],
-        correct: 1
-    },
-    {
-        question: "Qual é a cor oficial da UFRRJ?",
-        answers: [
-            "Azul e branco",
-            "Verde e amarelo",
-            "Verde e branco",
-            "Azul e verde"
-        ],
-        correct: 1
-    },
-    {
-        question: "O que significa a sigla UFRRJ?",
-        answers: [
-            "Universidade Federal Rural do Rio de Janeiro",
-            "Universidade Federal Regional do Rio de Janeiro",
-            "União Federal Rural do Rio de Janeiro",
-            "Universidade Federal da Região do Rio de Janeiro"
-        ],
-        correct: 0
-    },
-    {
-        question: "Qual a banda de rock brasileiro forma na UFRRJ e que até hoje é uma das maiores do país?",
-        answers: [
-            "Capital Inicial",
-            "Charlie Brown Jr.",
-            "Os Paralamas do Sucesso",
-            "Titãs"
-        ],
-        correct: 2
-    },
-    {
-        question: "Qual a edição da Semana Rural 2026",
-        answers: [
-            "3ª",
-            "2ª",
-            "4ª",
-            "5ª"
-        ],
-        correct: 2
-    }
-],
-    Inovacao: [
+    "Conhecimentos Gerais": [
+        {
+            question: "Qual é o maior país do mundo em extensão territorial?",
+            answers: ["China", "Estados Unidos", "Rússia", "Canadá"],
+            correct: 2
+        },
+        {
+            question: "Em que ano ocorreu a independência do Brasil?",
+            answers: ["1800", "1822", "1889", "1500"],
+            correct: 1
+        },
+        {
+            question: "Qual é o rio mais extenso do mundo?",
+            answers: ["Rio Nilo", "Rio Amazonas", "Rio Mississippi", "Rio Yangtzé"],
+            correct: 1
+        },
+        {
+            question: "Quem pintou a Mona Lisa?",
+            answers: ["Van Gogh", "Picasso", "Leonardo da Vinci", "Michelangelo"],
+            correct: 2
+        },
+        {
+            question: "Qual é a capital da Austrália?",
+            answers: ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+            correct: 2
+        },
+        {
+            question: "Em que ano o homem pisou na Lua pela primeira vez?",
+            answers: ["1965", "1969", "1971", "1975"],
+            correct: 1
+        },
+        {
+            question: "Qual é o elemento químico mais abundante no universo?",
+            answers: ["Oxigênio", "Carbono", "Hidrogênio", "Nitrogênio"],
+            correct: 2
+        },
+        {
+            question: "Quem escreveu 'Dom Casmurro'?",
+            answers: [
+                "José de Alencar",
+                "Machado de Assis",
+                "Carlos Drummond de Andrade",
+                "Monteiro Lobato"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual é o maior oceano do mundo?",
+            answers: ["Oceano Atlântico", "Oceano Índico", "Oceano Pacífico", "Oceano Ártico"],
+            correct: 2
+        },
+        {
+            question: "Em que país surgiu a Revolução Industrial?",
+            answers: ["França", "Estados Unidos", "Alemanha", "Inglaterra"],
+            correct: 3
+        },
+        {
+            question: "Qual é o animal mais rápido do mundo?",
+            answers: ["Leopardo", "Falcão-peregrino", "Guepardo", "Águia-real"],
+            correct: 1
+        },
+        {
+            question: "Quantos estados tem o Brasil atualmente?",
+            answers: ["26", "27", "25", "28"],
+            correct: 0
+        },
+        {
+            question: "Qual foi o primeiro presidente do Brasil?",
+            answers: [
+                "Getúlio Vargas",
+                "Deodoro da Fonseca",
+                "Dom Pedro II",
+                "Juscelino Kubitschek"
+            ],
+            correct: 1
+        },
+        {
+            question: "O que significa a sigla ONU?",
+            answers: [
+                "Organização das Nações Unidas",
+                "Ordem Nacional Unificada",
+                "Organização Nacional Unida",
+                "Organização das Nações Universais"
+            ],
+            correct: 0
+        },
+        {
+            question: "Qual é o planeta mais próximo do Sol?",
+            answers: ["Vênus", "Terra", "Mercúrio", "Marte"],
+            correct: 2
+        }
+    ],
+    "UFRRJ": [
+        {
+            question: "Em que ano foi fundada a UFRRJ?",
+            answers: ["1910", "1920", "1934", "1945"],
+            correct: 0
+        },
+        {
+            question: "Qual é o nome do campus principal da UFRRJ?",
+            answers: [
+                "Campus Nova Iguaçu",
+                "Campus Seropédica",
+                "Campus Três Rios",
+                "Campus Campos dos Goytacazes"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual era o nome original da UFRRJ quando foi fundada?",
+            answers: [
+                "Escola Superior de Agricultura",
+                "Escola Superior de Agricultura e Medicina Veterinária",
+                "Instituto Federal Rural",
+                "Universidade Rural do Brasil"
+            ],
+            correct: 1
+        },
+        {
+            question: "Em que ano a instituição foi elevada ao status de universidade?",
+            answers: ["1934", "1943", "1950", "1960"],
+            correct: 1
+        },
+        {
+            question: "Qual é o símbolo oficial da UFRRJ?",
+            answers: [
+                "Coruja",
+                "Águia",
+                "Brasão com elementos agrícolas",
+                "Leão"
+            ],
+            correct: 2
+        },
+        {
+            question: "Quantos institutos compõem a estrutura acadêmica da UFRRJ atualmente?",
+            answers: ["5", "6", "7", "8"],
+            correct: 1
+        },
+        {
+            question: "Além de Seropédica, quais outros campi a UFRRJ possui?",
+            answers: [
+                "Nova Iguaçu e Três Rios",
+                "Niterói e Petrópolis",
+                "Volta Redonda e Resende",
+                "Duque de Caxias e Belford Roxo"
+            ],
+            correct: 0
+        },
+        {
+            question: "Qual curso é considerado o mais antigo da UFRRJ?",
+            answers: [
+                "Medicina Veterinária",
+                "Agronomia",
+                "Engenharia Florestal",
+                "Zootecnia"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual é a cor oficial da UFRRJ?",
+            answers: [
+                "Azul e branco",
+                "Verde e amarelo",
+                "Verde e branco",
+                "Azul e verde"
+            ],
+            correct: 1
+        },
+        {
+            question: "O que significa a sigla UFRRJ?",
+            answers: [
+                "Universidade Federal Rural do Rio de Janeiro",
+                "Universidade Federal Regional do Rio de Janeiro",
+                "União Federal Rural do Rio de Janeiro",
+                "Universidade Federal da Região do Rio de Janeiro"
+            ],
+            correct: 0
+        },
+        {
+            question: "Qual a banda de rock brasileiro forma na UFRRJ e que até hoje é uma das maiores do país?",
+            answers: [
+                "Capital Inicial",
+                "Charlie Brown Jr.",
+                "Os Paralamas do Sucesso",
+                "Titãs"
+            ],
+            correct: 2
+        },
+        {
+            question: "Qual a edição da Semana Rural 2026",
+            answers: [
+                "3ª",
+                "2ª",
+                "4ª",
+                "5ª"
+            ],
+            correct: 2
+        }
+    ],
+    "Inovação": [
         {
             question: "Quem é considerado o pai da computação moderna?",
             answers: [
@@ -241,444 +241,444 @@ const questionsBank = {
             correct: 1
         }
     ],
-    Sustentabilidade: [
-    {
-        question: "Qual é o principal gás do efeito estufa?",
-        answers: ["Oxigênio", "Nitrogênio", "Dióxido de Carbono", "Hidrogênio"],
-        correct: 2
-    },
-    {
-        question: "O que significa ESG?",
-        answers: [
-            "Environmental, Social and Governance",
-            "Economic, Social and Global",
-            "Energy, Sustainability and Growth",
-            "Environmental, Strategic and General"
-        ],
-        correct: 0
-    },
-    {
-        question: "Qual destes é um exemplo de energia renovável?",
-        answers: [
-            "Carvão mineral",
-            "Energia solar",
-            "Petróleo",
-            "Gás natural"
-        ],
-        correct: 1
-    },
-    {
-        question: "O que são os ODS (Objetivos de Desenvolvimento Sustentável)?",
-        answers: [
-            "Metas exclusivas para países desenvolvidos",
-            "17 objetivos globais estabelecidos pela ONU para um mundo mais sustentável",
-            "Padrões de qualidade para produtos orgânicos",
-            "Regras para o comércio internacional"
-        ],
-        correct: 1
-    },
-    {
-        question: "Qual é o conceito dos 3 R's da sustentabilidade?",
-        answers: [
-            "Reciclar, Reutilizar e Reduzir",
-            "Reformar, Reconstruir e Reciclar",
-            "Reduzir, Reciclar e Reformar",
-            "Reutilizar, Reformar e Redistribuir"
-        ],
-        correct: 0
-    },
-    {
-        question: "O que é pegada de carbono?",
-        answers: [
-            "Medida de poluição do ar nas cidades",
-            "Quantidade total de gases de efeito estufa emitidos por atividades humanas",
-            "Marca deixada por pneus no asfalto",
-            "Técnica de plantio sustentável"
-        ],
-        correct: 1
-    },
-    {
-        question: "Qual país é o maior emissor de gases de efeito estufa do mundo?",
-        answers: ["Estados Unidos", "Índia", "China", "Brasil"],
-        correct: 2
-    },
-    {
-        question: "O que é economia circular?",
-        answers: [
-            "Modelo econômico baseado em moedas circulares",
-            "Sistema que elimina resíduos e mantém recursos em uso contínuo",
-            "Comércio entre países vizinhos",
-            "Mercado financeiro internacional"
-        ],
-        correct: 1
-    },
-    {
-        question: "Qual acordo internacional visa combater as mudanças climáticas?",
-        answers: [
-            "Acordo de Paris",
-            "Protocolo de Kyoto",
-            "Tratado de Versalhes",
-            "Acordo de Bretton Woods"
-        ],
-        correct: 0
-    },
-    {
-        question: "O que significa a sigla COP quando falamos de clima?",
-        answers: [
-            "Comitê de Operações Públicas",
-            "Conferência das Partes",
-            "Conselho de Organizações Públicas",
-            "Comissão de Orçamento Público"
-        ],
-        correct: 1
-    },
-    {
-        question: "Qual é a fonte de energia mais utilizada no Brasil?",
-        answers: [
-            "Energia solar",
-            "Energia eólica",
-            "Energia hidrelétrica",
-            "Energia nuclear"
-        ],
-        correct: 2
-    },
-    {
-        question: "O que é desenvolvimento sustentável?",
-        answers: [
-            "Crescimento econômico a qualquer custo",
-            "Desenvolvimento que atende necessidades atuais sem comprometer gerações futuras",
-            "Apenas preservação ambiental",
-            "Industrialização acelerada"
-        ],
-        correct: 1
-    },
-    {
-        question: "Qual material leva mais tempo para se decompor na natureza?",
-        answers: [
-            "Papel",
-            "Plástico",
-            "Vidro",
-            "Madeira"
-        ],
-        correct: 2
-    }
+    "Sustentabilidade": [
+        {
+            question: "Qual é o principal gás do efeito estufa?",
+            answers: ["Oxigênio", "Nitrogênio", "Dióxido de Carbono", "Hidrogênio"],
+            correct: 2
+        },
+        {
+            question: "O que significa ESG?",
+            answers: [
+                "Environmental, Social and Governance",
+                "Economic, Social and Global",
+                "Energy, Sustainability and Growth",
+                "Environmental, Strategic and General"
+            ],
+            correct: 0
+        },
+        {
+            question: "Qual destes é um exemplo de energia renovável?",
+            answers: [
+                "Carvão mineral",
+                "Energia solar",
+                "Petróleo",
+                "Gás natural"
+            ],
+            correct: 1
+        },
+        {
+            question: "O que são os ODS (Objetivos de Desenvolvimento Sustentável)?",
+            answers: [
+                "Metas exclusivas para países desenvolvidos",
+                "17 objetivos globais estabelecidos pela ONU para um mundo mais sustentável",
+                "Padrões de qualidade para produtos orgânicos",
+                "Regras para o comércio internacional"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual é o conceito dos 3 R's da sustentabilidade?",
+            answers: [
+                "Reciclar, Reutilizar e Reduzir",
+                "Reformar, Reconstruir e Reciclar",
+                "Reduzir, Reciclar e Reformar",
+                "Reutilizar, Reformar e Redistribuir"
+            ],
+            correct: 0
+        },
+        {
+            question: "O que é pegada de carbono?",
+            answers: [
+                "Medida de poluição do ar nas cidades",
+                "Quantidade total de gases de efeito estufa emitidos por atividades humanas",
+                "Marca deixada por pneus no asfalto",
+                "Técnica de plantio sustentável"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual país é o maior emissor de gases de efeito estufa do mundo?",
+            answers: ["Estados Unidos", "Índia", "China", "Brasil"],
+            correct: 2
+        },
+        {
+            question: "O que é economia circular?",
+            answers: [
+                "Modelo econômico baseado em moedas circulares",
+                "Sistema que elimina resíduos e mantém recursos em uso contínuo",
+                "Comércio entre países vizinhos",
+                "Mercado financeiro internacional"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual acordo internacional visa combater as mudanças climáticas?",
+            answers: [
+                "Acordo de Paris",
+                "Protocolo de Kyoto",
+                "Tratado de Versalhes",
+                "Acordo de Bretton Woods"
+            ],
+            correct: 0
+        },
+        {
+            question: "O que significa a sigla COP quando falamos de clima?",
+            answers: [
+                "Comitê de Operações Públicas",
+                "Conferência das Partes",
+                "Conselho de Organizações Públicas",
+                "Comissão de Orçamento Público"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual é a fonte de energia mais utilizada no Brasil?",
+            answers: [
+                "Energia solar",
+                "Energia eólica",
+                "Energia hidrelétrica",
+                "Energia nuclear"
+            ],
+            correct: 2
+        },
+        {
+            question: "O que é desenvolvimento sustentável?",
+            answers: [
+                "Crescimento econômico a qualquer custo",
+                "Desenvolvimento que atende necessidades atuais sem comprometer gerações futuras",
+                "Apenas preservação ambiental",
+                "Industrialização acelerada"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual material leva mais tempo para se decompor na natureza?",
+            answers: [
+                "Papel",
+                "Plástico",
+                "Vidro",
+                "Madeira"
+            ],
+            correct: 2
+        }
     ],
-    Entreterimento: [
-    {
-        question: "Qual ator interpreta o Homem de Ferro no Universo Cinematográfico da Marvel?",
-        answers: [
-            "Chris Evans",
-            "Robert Downey Jr.",
-            "Chris Hemsworth",
-            "Mark Ruffalo"
-        ],
-        correct: 1
-    },
-    {
-        question: "Em que ano foi lançado o primeiro filme dos Vingadores?",
-        answers: ["2010", "2011", "2012", "2013"],
-        correct: 2
-    },
-    {
-        question: "Qual seleção ganhou a Copa do Mundo de Futebol de 2022?",
-        answers: ["França", "Brasil", "Argentina", "Alemanha"],
-        correct: 2
-    },
-    {
-        question: "Quem é o super-herói conhecido como o 'Homem de Aço'?",
-        answers: ["Batman", "Superman", "Homem de Ferro", "Thor"],
-        correct: 1
-    },
-    {
-        question: "Qual é o filme de maior bilheteria da história do cinema?",
-        answers: [
-            "Vingadores: Ultimato",
-            "Avatar",
-            "Titanic",
-            "Star Wars: O Despertar da Força"
-        ],
-        correct: 1
-    },
-    {
-        question: "Em qual esporte Michael Jordan se destacou?",
-        answers: ["Futebol", "Basquete", "Tênis", "Golfe"],
-        correct: 1
-    },
-    {
-        question: "Qual é o nome do vilão principal nos filmes do Batman dirigidos por Christopher Nolan?",
-        answers: ["Pinguim", "Charada", "Coringa", "Duas-Caras"],
-        correct: 2
-    },
-    {
-        question: "Quantos anéis olímpicos existem na bandeira dos Jogos Olímpicos?",
-        answers: ["3", "4", "5", "6"],
-        correct: 2
-    },
-    {
-        question: "Qual estúdio é responsável pelos filmes de animação 'Toy Story' e 'Procurando Nemo'?",
-        answers: ["DreamWorks", "Pixar", "Disney Animation", "Illumination"],
-        correct: 1
-    },
-    {
-        question: "Quem é o diretor do filme 'Pantera Negra'?",
-        answers: [
-            "Spike Lee",
-            "Ryan Coogler",
-            "Jordan Peele",
-            "Antoine Fuqua"
-        ],
-        correct: 1
-    },
-    {
-        question: "Qual país sediou os Jogos Olímpicos de 2016?",
-        answers: ["China", "Reino Unido", "Brasil", "Japão"],
-        correct: 2
-    },
-    {
-        question: "Qual ator interpreta o Wolverine nos filmes dos X-Men?",
-        answers: [
-            "Hugh Jackman",
-            "Ryan Reynolds",
-            "Patrick Stewart",
-            "Ian McKellen"
-        ],
-        correct: 0
-    },
-    {
-        question: "O que é o Oscar?",
-        answers: [
-            "Festival de música",
-            "Premiação do cinema",
-            "Competição esportiva",
-            "Programa de televisão"
-        ],
-        correct: 1
-    },
-    {
-        question: "Qual é o esporte mais popular do mundo?",
-        answers: ["Basquete", "Críquete", "Tênis", "Futebol"],
-        correct: 3
-    },
-    {
-        question: "Qual personagem da Marvel é conhecido como o 'Deus da Trapaça'?",
-        answers: ["Thor", "Loki", "Odin", "Heimdall"],
-        correct: 1
-    },
-    {
-        question: "Qual é o nome do ator que interpreta o Capitão América?",
-        answers: [
-            "Chris Pratt",
-            "Chris Evans",
-            "Chris Hemsworth",
-            "Chris Pine"
-        ],
-        correct: 1
-    },
-    {
-        question: "Em que ano a Marvel Studios lançou 'Homem de Ferro', seu primeiro filme?",
-        answers: ["2006", "2007", "2008", "2009"],
-        correct: 2
-    },
-    {
-        question: "Qual esporte é jogado em Wimbledon?",
-        answers: ["Golfe", "Críquete", "Tênis", "Rúgbi"],
-        correct: 2
-    },
-    {
-        question: "Quem é o criador do Batman?",
-        answers: [
-            "Stan Lee",
-            "Bob Kane",
-            "Jack Kirby",
-            "Jerry Siegel"
-        ],
-        correct: 1
-    },
-    {
-        question: "Qual é a franquia de filmes de maior bilheteria da história?",
-        answers: [
-            "Star Wars",
-            "Harry Potter",
-            "Universo Cinematográfico Marvel",
-            "Velozes e Furiosos"
-        ],
-        correct: 2
-    },
-    {
-        question: "Quantos jogadores tem um time de futebol em campo?",
-        answers: ["9", "10", "11", "12"],
-        correct: 2
-    },
-    {
-        question: "Qual atriz interpreta a Mulher-Maravilha nos filmes da DC?",
-        answers: [
-            "Scarlett Johansson",
-            "Gal Gadot",
-            "Brie Larson",
-            "Margot Robbie"
-        ],
-        correct: 1
-    },
-    {
-        question: "Qual é o nome do campeonato mundial de futebol?",
-        answers: [
-            "Copa do Mundo FIFA",
-            "Liga dos Campeões",
-            "Copa América",
-            "Eurocopa"
-        ],
-        correct: 0
-    },
-    {
-        question: "Quem dirigiu o filme 'Vingadores: Ultimato'?",
-        answers: [
-            "Joss Whedon",
-            "James Gunn",
-            "Anthony e Joe Russo",
-            "Jon Favreau"
-        ],
-        correct: 2
-    },
-    {
-        question: "Qual é o animal símbolo das Olimpíadas?",
-        answers: [
-            "Águia",
-            "Leão",
-            "Mascote muda a cada edição",
-            "Pomba"
-        ],
-        correct: 2
-    },
-    {
-        question: "Qual personagem dos quadrinhos é conhecido como o 'Mercenário Tagarela'?",
-        answers: ["Wolverine", "Deadpool", "Justiceiro", "Venom"],
-        correct: 1
-    },
-    {
-        question: "Qual país é o maior campeão mundial de futebol?",
-        answers: ["Alemanha", "Itália", "Brasil", "Argentina"],
-        correct: 2
-    },
-    {
-        question: "O que significa a sigla MCU no cinema?",
-        answers: [
-            "Marvel Comics Universe",
-            "Marvel Cinematic Universe",
-            "Marvel Creative Universe",
-            "Marvel Characters United"
-        ],
-        correct: 1
-    },
-    {
-        question: "Qual é o nome do planeta natal do Superman?",
-        answers: ["Marte", "Krypton", "Vulcano", "Asgard"],
-        correct: 1
-    },
-    {
-        question: "Em que ano foi realizada a primeira Copa do Mundo de Futebol?",
-        answers: ["1920", "1930", "1940", "1950"],
-        correct: 1
-    },
-    {
-    question: "Qual é o personagem principal da franquia de jogos 'The Legend of Zelda'?",
-    answers: ["Zelda", "Link", "Ganondorf", "Mario"],
-    correct: 1
-    },
-    {
-    question: "Qual é o nome do pokémon que é o mascote da franquia?",
-    answers: ["Charmander", "Pikachu", "Bulbasaur", "Squirtle"],
-    correct: 1
-    },
-    {
-    question: "Em Dragon Ball, qual é o nome da técnica de ataque mais famosa de Goku?",
-    answers: ["Genki Dama", "Kamehameha", "Final Flash", "Galick Gun"],
-    correct: 1
-    },
-    {
-    question: "Qual é o nome do protagonista de Naruto?",
-    answers: ["Sasuke Uchiha", "Naruto Uzumaki", "Kakashi Hatake", "Sakura Haruno"],
-    correct: 1
-    },
-    {
-    question: "Qual empresa criou o jogo 'Mario Bros' e 'The Legend of Zelda'?",
-    answers: ["Sega", "Sony", "Nintendo", "Microsoft"],
-    correct: 2
-    },
-    {
-    question: "Qual é o nome do vilão principal em 'Harry Potter'?",
-    answers: [
-        "Dumbledore",
-        "Sirius Black",
-        "Voldemort",
-        "Severo Snape"
-    ],
-    correct: 2
-    },
-    {
-    question: "Qual é o nome do primeiro filme da franquia 'Star Wars' lançado em 1977?",
-    answers: [
-        "O Império Contra-Ataca",
-        "Uma Nova Esperança",
-        "O Retorno de Jedi",
-        "A Ameaça Fantasma"
-    ],
-    correct: 1
-    },
-    {   
-    question: "Qual dragão é o parceiro de Soluço na franquia 'Como Treinar o Seu Dragão'?",
-    answers: ["Tempestade", "Banguela", "Ciclone", "Fúria"],
-    correct: 1
-    },
-    {   
-    question: "Em 'Pokémon', qual é o nome do professor que entrega os pokémons iniciais na região de Kanto?",
-    answers: [
-        "Professor Elm",
-        "Professor Birch",
-        "Professor Oak",
-        "Professor Rowan"
-    ],
-    correct: 2
-    },
-    {
-    question: "Qual é o jogo mais vendido de todos os tempos?",
-    answers: ["Tetris", "Minecraft", "GTA V", "PUBG"],
-    correct: 1
-    },
-    {
-    question: "Qual personagem da Disney perdeu um sapato de cristal em um baile?",
-    answers: ["Bela", "Ariel", "Cinderela", "Branca de Neve"],
-    correct: 2
-    },
-    {
-    question: "Quantos Dragon Balls são necessários para invocar o dragão Shenlong?",
-    answers: ["5", "6", "7", "8"],
-    correct: 2
-    },
-    {   
-    question: "Qual é o nome do reino mágico em 'Frozen'?",
-    answers: ["Corona", "Arendelle", "Atlântida", "Valhalla"],
-    correct: 1
-    },
-    {
-    question: "Em qual console foi lançado o primeiro jogo do Sonic?",
-    answers: [
-        "Super Nintendo",
-        "PlayStation 1",
-        "Mega Drive/Genesis",
-        "Nintendo 64"
-    ],
-    correct: 2
-    },
-    {
-    question: "Qual é o nome do personagem principal do anime 'One Piece'?",
-    answers: [
-        "Roronoa Zoro",
-        "Monkey D. Luffy",
-        "Sanji",
-        "Trafalgar Law"
-    ],
-    correct: 1
-    }
+    "Entretenimento": [
+        {
+            question: "Qual ator interpreta o Homem de Ferro no Universo Cinematográfico da Marvel?",
+            answers: [
+                "Chris Evans",
+                "Robert Downey Jr.",
+                "Chris Hemsworth",
+                "Mark Ruffalo"
+            ],
+            correct: 1
+        },
+        {
+            question: "Em que ano foi lançado o primeiro filme dos Vingadores?",
+            answers: ["2010", "2011", "2012", "2013"],
+            correct: 2
+        },
+        {
+            question: "Qual seleção ganhou a Copa do Mundo de Futebol de 2022?",
+            answers: ["França", "Brasil", "Argentina", "Alemanha"],
+            correct: 2
+        },
+        {
+            question: "Quem é o super-herói conhecido como o 'Homem de Aço'?",
+            answers: ["Batman", "Superman", "Homem de Ferro", "Thor"],
+            correct: 1
+        },
+        {
+            question: "Qual é o filme de maior bilheteria da história do cinema?",
+            answers: [
+                "Vingadores: Ultimato",
+                "Avatar",
+                "Titanic",
+                "Star Wars: O Despertar da Força"
+            ],
+            correct: 1
+        },
+        {
+            question: "Em qual esporte Michael Jordan se destacou?",
+            answers: ["Futebol", "Basquete", "Tênis", "Golfe"],
+            correct: 1
+        },
+        {
+            question: "Qual é o nome do vilão principal nos filmes do Batman dirigidos por Christopher Nolan?",
+            answers: ["Pinguim", "Charada", "Coringa", "Duas-Caras"],
+            correct: 2
+        },
+        {
+            question: "Quantos anéis olímpicos existem na bandeira dos Jogos Olímpicos?",
+            answers: ["3", "4", "5", "6"],
+            correct: 2
+        },
+        {
+            question: "Qual estúdio é responsável pelos filmes de animação 'Toy Story' e 'Procurando Nemo'?",
+            answers: ["DreamWorks", "Pixar", "Disney Animation", "Illumination"],
+            correct: 1
+        },
+        {
+            question: "Quem é o diretor do filme 'Pantera Negra'?",
+            answers: [
+                "Spike Lee",
+                "Ryan Coogler",
+                "Jordan Peele",
+                "Antoine Fuqua"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual país sediou os Jogos Olímpicos de 2016?",
+            answers: ["China", "Reino Unido", "Brasil", "Japão"],
+            correct: 2
+        },
+        {
+            question: "Qual ator interpreta o Wolverine nos filmes dos X-Men?",
+            answers: [
+                "Hugh Jackman",
+                "Ryan Reynolds",
+                "Patrick Stewart",
+                "Ian McKellen"
+            ],
+            correct: 0
+        },
+        {
+            question: "O que é o Oscar?",
+            answers: [
+                "Festival de música",
+                "Premiação do cinema",
+                "Competição esportiva",
+                "Programa de televisão"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual é o esporte mais popular do mundo?",
+            answers: ["Basquete", "Críquete", "Tênis", "Futebol"],
+            correct: 3
+        },
+        {
+            question: "Qual personagem da Marvel é conhecido como o 'Deus da Trapaça'?",
+            answers: ["Thor", "Loki", "Odin", "Heimdall"],
+            correct: 1
+        },
+        {
+            question: "Qual é o nome do ator que interpreta o Capitão América?",
+            answers: [
+                "Chris Pratt",
+                "Chris Evans",
+                "Chris Hemsworth",
+                "Chris Pine"
+            ],
+            correct: 1
+        },
+        {
+            question: "Em que ano a Marvel Studios lançou 'Homem de Ferro', seu primeiro filme?",
+            answers: ["2006", "2007", "2008", "2009"],
+            correct: 2
+        },
+        {
+            question: "Qual esporte é jogado em Wimbledon?",
+            answers: ["Golfe", "Críquete", "Tênis", "Rúgbi"],
+            correct: 2
+        },
+        {
+            question: "Quem é o criador do Batman?",
+            answers: [
+                "Stan Lee",
+                "Bob Kane",
+                "Jack Kirby",
+                "Jerry Siegel"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual é a franquia de filmes de maior bilheteria da história?",
+            answers: [
+                "Star Wars",
+                "Harry Potter",
+                "Universo Cinematográfico Marvel",
+                "Velozes e Furiosos"
+            ],
+            correct: 2
+        },
+        {
+            question: "Quantos jogadores tem um time de futebol em campo?",
+            answers: ["9", "10", "11", "12"],
+            correct: 2
+        },
+        {
+            question: "Qual atriz interpreta a Mulher-Maravilha nos filmes da DC?",
+            answers: [
+                "Scarlett Johansson",
+                "Gal Gadot",
+                "Brie Larson",
+                "Margot Robbie"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual é o nome do campeonato mundial de futebol?",
+            answers: [
+                "Copa do Mundo FIFA",
+                "Liga dos Campeões",
+                "Copa América",
+                "Eurocopa"
+            ],
+            correct: 0
+        },
+        {
+            question: "Quem dirigiu o filme 'Vingadores: Ultimato'?",
+            answers: [
+                "Joss Whedon",
+                "James Gunn",
+                "Anthony e Joe Russo",
+                "Jon Favreau"
+            ],
+            correct: 2
+        },
+        {
+            question: "Qual é o animal símbolo das Olimpíadas?",
+            answers: [
+                "Águia",
+                "Leão",
+                "Mascote muda a cada edição",
+                "Pomba"
+            ],
+            correct: 2
+        },
+        {
+            question: "Qual personagem dos quadrinhos é conhecido como o 'Mercenário Tagarela'?",
+            answers: ["Wolverine", "Deadpool", "Justiceiro", "Venom"],
+            correct: 1
+        },
+        {
+            question: "Qual país é o maior campeão mundial de futebol?",
+            answers: ["Alemanha", "Itália", "Brasil", "Argentina"],
+            correct: 2
+        },
+        {
+            question: "O que significa a sigla MCU no cinema?",
+            answers: [
+                "Marvel Comics Universe",
+                "Marvel Cinematic Universe",
+                "Marvel Creative Universe",
+                "Marvel Characters United"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual é o nome do planeta natal do Superman?",
+            answers: ["Marte", "Krypton", "Vulcano", "Asgard"],
+            correct: 1
+        },
+        {
+            question: "Em que ano foi realizada a primeira Copa do Mundo de Futebol?",
+            answers: ["1920", "1930", "1940", "1950"],
+            correct: 1
+        },
+        {
+            question: "Qual é o personagem principal da franquia de jogos 'The Legend of Zelda'?",
+            answers: ["Zelda", "Link", "Ganondorf", "Mario"],
+            correct: 1
+        },
+        {
+            question: "Qual é o nome do pokémon que é o mascote da franquia?",
+            answers: ["Charmander", "Pikachu", "Bulbasaur", "Squirtle"],
+            correct: 1
+        },
+        {
+            question: "Em Dragon Ball, qual é o nome da técnica de ataque mais famosa de Goku?",
+            answers: ["Genki Dama", "Kamehameha", "Final Flash", "Galick Gun"],
+            correct: 1
+        },
+        {
+            question: "Qual é o nome do protagonista de Naruto?",
+            answers: ["Sasuke Uchiha", "Naruto Uzumaki", "Kakashi Hatake", "Sakura Haruno"],
+            correct: 1
+        },
+        {
+            question: "Qual empresa criou o jogo 'Mario Bros' e 'The Legend of Zelda'?",
+            answers: ["Sega", "Sony", "Nintendo", "Microsoft"],
+            correct: 2
+        },
+        {
+            question: "Qual é o nome do vilão principal em 'Harry Potter'?",
+            answers: [
+                "Dumbledore",
+                "Sirius Black",
+                "Voldemort",
+                "Severo Snape"
+            ],
+            correct: 2
+        },
+        {
+            question: "Qual é o nome do primeiro filme da franquia 'Star Wars' lançado em 1977?",
+            answers: [
+                "O Império Contra-Ataca",
+                "Uma Nova Esperança",
+                "O Retorno de Jedi",
+                "A Ameaça Fantasma"
+            ],
+            correct: 1
+        },
+        {
+            question: "Qual dragão é o parceiro de Soluço na franquia 'Como Treinar o Seu Dragão'?",
+            answers: ["Tempestade", "Banguela", "Ciclone", "Fúria"],
+            correct: 1
+        },
+        {
+            question: "Em 'Pokémon', qual é o nome do professor que entrega os pokémons iniciais na região de Kanto?",
+            answers: [
+                "Professor Elm",
+                "Professor Birch",
+                "Professor Oak",
+                "Professor Rowan"
+            ],
+            correct: 2
+        },
+        {
+            question: "Qual é o jogo mais vendido de todos os tempos?",
+            answers: ["Tetris", "Minecraft", "GTA V", "PUBG"],
+            correct: 1
+        },
+        {
+            question: "Qual personagem da Disney perdeu um sapato de cristal em um baile?",
+            answers: ["Bela", "Ariel", "Cinderela", "Branca de Neve"],
+            correct: 2
+        },
+        {
+            question: "Quantos Dragon Balls são necessários para invocar o dragão Shenlong?",
+            answers: ["5", "6", "7", "8"],
+            correct: 2
+        },
+        {
+            question: "Qual é o nome do reino mágico em 'Frozen'?",
+            answers: ["Corona", "Arendelle", "Atlântida", "Valhalla"],
+            correct: 1
+        },
+        {
+            question: "Em qual console foi lançado o primeiro jogo do Sonic?",
+            answers: [
+                "Super Nintendo",
+                "PlayStation 1",
+                "Mega Drive/Genesis",
+                "Nintendo 64"
+            ],
+            correct: 2
+        },
+        {
+            question: "Qual é o nome do personagem principal do anime 'One Piece'?",
+            answers: [
+                "Roronoa Zoro",
+                "Monkey D. Luffy",
+                "Sanji",
+                "Trafalgar Law"
+            ],
+            correct: 1
+        }
     ]
 };
 
@@ -691,25 +691,55 @@ const gameState = {
     timer: 30,
     timerInterval: null,
     totalQuestions: 5,
-    questions: []
+    questions: [],
+    availableTopics: [],
+    maxPossibleScore: 0
 };
 
 // Inicialização
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     console.log('Signal Quiz - Jogo iniciado!');
     showScreen('welcome');
     drawRoulette(); // Pré-desenha a roleta
+    // Configurar botões do modal
+    const modalContinue = document.getElementById('modalContinueBtn');
+    const modalFinish = document.getElementById('modalFinishBtn');
+    const modalOverlay = document.getElementById('continueModal');
+    if (modalContinue) modalContinue.addEventListener('click', () => {
+        hideContinueModal();
+        // Remover o tema atual e continuar
+        if (gameState.availableTopics && gameState.selectedTopic) {
+            gameState.availableTopics = gameState.availableTopics.filter(t => t !== gameState.selectedTopic);
+        }
+        if (!gameState.availableTopics || gameState.availableTopics.length === 0) {
+            showFinalResult();
+            return;
+        }
+        showScreen('roulette');
+        drawRoulette();
+    });
+    if (modalFinish) modalFinish.addEventListener('click', () => {
+        hideContinueModal();
+        showFinalResult();
+    });
+    if (modalOverlay) modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) {
+            // fechar ao clicar fora do conteúdo -> considerar como encerrar
+            hideContinueModal();
+            showFinalResult();
+        }
+    });
 });
 
 // Gerenciar telas
 function showScreen(screenName) {
     console.log('Mostrando tela:', screenName);
-    
+
     // Esconder todas as telas
     document.querySelectorAll('.screen').forEach(screen => {
         screen.classList.remove('active');
     });
-    
+
     // Mostrar a tela selecionada
     const screenElement = document.getElementById(screenName + '-screen');
     if (screenElement) {
@@ -726,7 +756,12 @@ function startGame() {
     gameState.score = 0;
     gameState.currentQuestionIndex = 0;
     document.getElementById('score').textContent = '0';
+    // Inicializar tópicos disponíveis e máximo de pontos
+    gameState.availableTopics = Object.keys(questionsBank);
+    gameState.maxPossibleScore = 0;
+
     showScreen('roulette');
+    drawRoulette();
 }
 
 // Desenhar roleta
@@ -736,38 +771,38 @@ function drawRoulette() {
         console.error('Canvas não encontrado!');
         return;
     }
-    
+
     const ctx = canvas.getContext('2d');
     const centerX = canvas.width / 2;
     const centerY = canvas.height / 2;
     const radius = canvas.width / 2 - 10;
-    
-    const topics = Object.keys(questionsBank);
+
+    const topics = (gameState.availableTopics && gameState.availableTopics.length) ? gameState.availableTopics : Object.keys(questionsBank);
     const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7'];
-    
+
     // Limpar canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
+
     // Desenhar cada fatia
     topics.forEach((topic, index) => {
         const startAngle = (index * 2 * Math.PI) / topics.length - Math.PI / 2;
         const endAngle = ((index + 1) * 2 * Math.PI) / topics.length - Math.PI / 2;
-        
+
         // Desenhar fatia
         ctx.beginPath();
         ctx.moveTo(centerX, centerY);
         ctx.arc(centerX, centerY, radius, startAngle, endAngle);
         ctx.closePath();
-        
+
         // Preencher com cor
-        ctx.fillStyle = colors[index];
+        ctx.fillStyle = colors[index % colors.length];
         ctx.fill();
-        
+
         // Borda branca
         ctx.strokeStyle = 'white';
         ctx.lineWidth = 3;
         ctx.stroke();
-        
+
         // Adicionar texto
         ctx.save();
         ctx.translate(centerX, centerY);
@@ -775,16 +810,23 @@ function drawRoulette() {
         ctx.rotate(textAngle);
         ctx.textAlign = 'right';
         ctx.fillStyle = 'white';
-        ctx.font = 'bold 14px Poppins, sans-serif';
         ctx.shadowColor = 'rgba(0,0,0,0.5)';
         ctx.shadowBlur = 5;
-        
+
         // Formatar nome do tópico
         const topicName = formatTopicName(topic);
+
+        // Ajustar dinamicamente o tamanho da fonte: se não couber, forçar 10px
+        const maxWidth = radius - 50; // espaço disponível para o texto
+        ctx.font = `bold 14px Poppins, sans-serif`;
+        if (ctx.measureText(topicName).width > maxWidth) {
+            ctx.font = `bold 10px Poppins, sans-serif`;
+        }
+
         ctx.fillText(topicName, radius - 25, 6);
         ctx.restore();
     });
-    
+
     // Desenhar círculo central
     ctx.beginPath();
     ctx.arc(centerX, centerY, 35, 0, 2 * Math.PI);
@@ -793,19 +835,19 @@ function drawRoulette() {
     ctx.strokeStyle = '#6C63FF';
     ctx.lineWidth = 4;
     ctx.stroke();
-    
+
     console.log('Roleta desenhada com sucesso!');
 }
 
 function formatTopicName(topic) {
     // Adiciona um espaço antes de cada letra maiúscula (exceto a primeira)
     let formatted = topic.replace(/([A-Z])/g, ' $1').trim();
-    
+
     // Capitaliza a primeira letra de cada palavra
     formatted = formatted.split(' ')
         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ');
-    
+
     return formatted;
 }
 
@@ -813,29 +855,35 @@ function formatTopicName(topic) {
 function spinRoulette() {
     const button = document.getElementById('spinButton');
     if (!button) return;
-    
+
     button.disabled = true;
-    
+
     const canvas = document.getElementById('rouletteCanvas');
     if (!canvas) return;
-    
-    const topics = Object.keys(questionsBank);
+
+    const topics = (gameState.availableTopics && gameState.availableTopics.length) ? gameState.availableTopics : Object.keys(questionsBank);
     const spinDuration = 3000; // 3 segundos
     const totalRotation = Math.random() * 360 + 1080; // Pelo menos 3 voltas
     const startTime = Date.now();
     const numTopics = topics.length;
+    if (numTopics === 0) {
+        // Não há mais tópicos disponíveis
+        button.disabled = false;
+        showFinalResult();
+        return;
+    }
     const sliceAngle = 360 / numTopics;
-    
+
     function animate() {
         const elapsed = Date.now() - startTime;
         const progress = Math.min(elapsed / spinDuration, 1);
-        
+
         // Easing para desaceleração suave
         const easeOut = 1 - Math.pow(1 - progress, 3);
         const rotation = totalRotation * easeOut;
-        
+
         canvas.style.transform = 'rotate(' + rotation + 'deg)';
-        
+
         if (progress < 1) {
             requestAnimationFrame(animate);
         } else {
@@ -844,13 +892,23 @@ function spinRoulette() {
             const invertedAngle = (360 - finalAngle) % 360;
             const selectedIndex = Math.floor(invertedAngle / sliceAngle) % numTopics;
             const selectedTopic = topics[selectedIndex];
-            
+
             gameState.selectedTopic = selectedTopic;
-            
+
             // Atualizar nome do tópico COM FORMATAÇÃO
             const topicNameElement = document.getElementById('topicName');
             if (topicNameElement) {
-                topicNameElement.textContent = formatTopicName(selectedTopic);
+                const formatted = formatTopicName(selectedTopic);
+                topicNameElement.textContent = formatted;
+
+                // Ajustar o tamanho da fonte no elemento DOM quando o texto for muito longo
+                // Usa tanto verificação de comprimento quanto overflow visual
+                const isTooLong = formatted.length > 20 || topicNameElement.scrollWidth > topicNameElement.clientWidth;
+                if (isTooLong) {
+                    topicNameElement.style.fontSize = '10px';
+                } else {
+                    topicNameElement.style.fontSize = '';
+                }
             }
 
             const selectedTopicDiv = document.getElementById('selectedTopicDiv');
@@ -859,10 +917,10 @@ function spinRoulette() {
                 selectedTopicDiv.offsetHeight; // Trigger reflow
                 selectedTopicDiv.style.animation = 'glowIn 0.5s ease-out';
             }
-            
+
             // Preparar perguntas
             prepareQuestions(selectedTopic);
-            
+
             // Aguardar um pouco antes de mostrar as perguntas
             setTimeout(() => {
                 showScreen('question');
@@ -872,7 +930,7 @@ function spinRoulette() {
             }, 2000);
         }
     }
-    
+
     requestAnimationFrame(animate);
 }
 
@@ -882,22 +940,28 @@ function prepareQuestions(topic) {
         console.error('Tópico não encontrado:', topic);
         return;
     }
-    
+
     // Clonar array de perguntas do tópico
     const allQuestions = [...questionsBank[topic]];
-    const selected = [];
     
-    // Selecionar aleatoriamente perguntas (máximo 5)
-    const count = Math.min(5, allQuestions.length);
-    for (let i = 0; i < count; i++) {
-        const randomIndex = Math.floor(Math.random() * allQuestions.length);
-        selected.push(allQuestions.splice(randomIndex, 1)[0]);
+    // Embaralhar usando Fisher-Yates (algoritmo comprovadamente justo)
+    for (let i = allQuestions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
     }
+    
+    // Pegar as primeiras 'count' perguntas após embaralhar
+    const count = Math.min(3, allQuestions.length);
+    const selected = allQuestions.slice(0, count);
     
     gameState.questions = selected;
     gameState.totalQuestions = selected.length;
-    
-    console.log('Perguntas preparadas:', selected.length);
+
+    // Atualizar máximo possível de pontos acumulado
+    gameState.maxPossibleScore += selected.length * 100;
+
+    console.log('Perguntas preparadas (aleatório justo):', selected.length);
+    console.log('Perguntas selecionadas:', selected.map(q => q.question.substring(0, 50) + '...'));
 }
 
 // Iniciar uma pergunta específica
@@ -907,41 +971,54 @@ function startQuestion(index) {
         endGame();
         return;
     }
-    
+
     gameState.currentQuestionIndex = index;
     const question = gameState.questions[index];
-    
+
     // Atualizar elementos da tela
     document.getElementById('question-text').textContent = question.question;
     document.getElementById('timer').textContent = '30';
-    
+
     // Atualizar barra de progresso
     const progress = (index / gameState.totalQuestions) * 100;
     document.getElementById('progressFill').style.width = progress + '%';
-    
+
     // Atualizar indicador de tópico
     const topicIndicator = document.getElementById('topicIndicator');
     if (topicIndicator) {
         topicIndicator.textContent = gameState.selectedTopic.toUpperCase();
     }
-    
+
     // Criar botões de resposta
     const answersContainer = document.getElementById('answers-container');
     answersContainer.innerHTML = '';
-    
+
     question.answers.forEach((answer, i) => {
         const button = document.createElement('button');
         button.className = 'answer-button';
-        button.textContent = answer;
-        button.onclick = function() {
+        
+        // ADICIONAR INDICADOR DE TECLA AQUI
+        const keyIndicator = document.createElement('span');
+        keyIndicator.className = 'key-indicator';
+        keyIndicator.textContent = i + 1; // 1, 2, 3, 4
+        button.appendChild(keyIndicator);
+        
+        // Adicionar texto da resposta
+        const answerText = document.createElement('span');
+        answerText.textContent = answer;
+        button.appendChild(answerText);
+        
+        button.onclick = function () {
             checkAnswer(i, question.correct);
         };
+        button.setAttribute('title', `Pressione ${i + 1} para selecionar esta resposta`);
+        
         answersContainer.appendChild(button);
     });
-    
+
     // Esconder feedback
     document.getElementById('feedbackContainer').style.display = 'none';
-    
+
     // Iniciar timer
     startTimer();
 }
@@ -950,14 +1027,14 @@ function startQuestion(index) {
 function checkAnswer(selectedIndex, correctIndex) {
     // Parar timer
     clearInterval(gameState.timerInterval);
-    
+
     // Desabilitar todos os botões
     const buttons = document.querySelectorAll('.answer-button');
     buttons.forEach(button => button.disabled = true);
-    
+
     // Marcar resposta correta
     buttons[correctIndex].classList.add('correct');
-    
+
     if (selectedIndex === correctIndex) {
         // Resposta correta
         gameState.score += 100;
@@ -968,7 +1045,7 @@ function checkAnswer(selectedIndex, correctIndex) {
         buttons[selectedIndex].classList.add('wrong');
         showFeedback(false);
     }
-    
+
     // Avançar para próxima pergunta após delay
     setTimeout(() => {
         gameState.currentQuestionIndex++;
@@ -980,32 +1057,32 @@ function checkAnswer(selectedIndex, correctIndex) {
 function startTimer() {
     let timeLeft = 30;
     const timerDisplay = document.getElementById('timer');
-    
+
     // Limpar timer anterior
     clearInterval(gameState.timerInterval);
-    
+
     gameState.timerInterval = setInterval(() => {
         timeLeft--;
         timerDisplay.textContent = timeLeft;
-        
+
         // Mudar cor quando estiver acabando
         if (timeLeft <= 10) {
             timerDisplay.style.color = '#f44336';
         }
-        
+
         if (timeLeft <= 0) {
             clearInterval(gameState.timerInterval);
             timerDisplay.style.color = '#2C3E50';
-            
+
             // Tempo esgotado
             const buttons = document.querySelectorAll('.answer-button');
             buttons.forEach(button => button.disabled = true);
-            
+
             const question = gameState.questions[gameState.currentQuestionIndex];
             buttons[question.correct].classList.add('correct');
-            
+
             showFeedback(false);
-            
+
             setTimeout(() => {
                 gameState.currentQuestionIndex++;
                 startQuestion(gameState.currentQuestionIndex);
@@ -1018,9 +1095,9 @@ function startTimer() {
 function showFeedback(isCorrect) {
     const feedbackContainer = document.getElementById('feedbackContainer');
     const feedbackMessage = document.getElementById('feedbackMessage');
-    
+
     feedbackContainer.style.display = 'block';
-    
+
     if (isCorrect) {
         feedbackMessage.innerHTML = '✅ Correto! +100 pontos';
         feedbackMessage.style.color = '#4CAF50';
@@ -1039,45 +1116,80 @@ function showFeedback(isCorrect) {
 // Finalizar jogo
 function endGame() {
     clearInterval(gameState.timerInterval);
-    showScreen('result');
-    
+
+    // Ao terminar as perguntas do tema atual, perguntar se o usuário quer continuar
     const finalScore = gameState.score;
-    const maxScore = gameState.totalQuestions * 100;
-    const percentage = maxScore > 0 ? (finalScore / maxScore) * 100 : 0;
+    const maxScore = gameState.maxPossibleScore || (gameState.totalQuestions * 100);
+
+    // Se não houver outros tópicos disponíveis (último tópico selecionado), não mostrar modal
+    if (!gameState.availableTopics || gameState.availableTopics.length <= 1) {
+        // Mostrar resultado final diretamente
+        showFinalResult();
+        return;
+    }
+
+    // Mostrar modal de continuar/encerrar (assíncrono)
+    showContinueModal(finalScore, maxScore);
+    return;
+}
+
+// Exibe a tela de resultado final com base em score acumulado
+function showFinalResult() {
+    showScreen('result');
+    const finalScore = gameState.score;
+    const maxScore = gameState.maxPossibleScore || (gameState.totalQuestions * 100);
     
     // Atualizar pontuação final
     document.getElementById('finalScore').textContent = finalScore;
     
-    // Determinar mensagem e estrelas
+    // NOVA ESCALA DE PONTUAÇÃO
     let message = '';
     let stars = '';
     
-    if (percentage >= 80) {
-        message = 'Excelente! Você é um expert! 🏆';
+    if (finalScore >= 1301) {
+        message = 'Incrível! Você é um gênio! 🏆';
         stars = '⭐⭐⭐⭐⭐';
-    } else if (percentage >= 60) {
-        message = 'Muito bom! Continue assim! 👏';
+    } else if (finalScore >= 901) {
+        message = 'Excelente! Quase lá no topo! 🌟';
         stars = '⭐⭐⭐⭐';
-    } else if (percentage >= 40) {
-        message = 'Bom trabalho! Dá pra melhorar! 💪';
+    } else if (finalScore >= 601) {
+        message = 'Muito bom! Continue assim! 👏';
         stars = '⭐⭐⭐';
-    } else if (percentage >= 20) {
-        message = 'Continue tentando! 📚';
+    } else if (finalScore >= 301) {
+        message = 'Bom trabalho! Dá pra melhorar! 💪';
         stars = '⭐⭐';
     } else {
-        message = 'Não desista! Tente novamente! 🎯';
+        message = 'Continue tentando! Você consegue! 📚';
         stars = '⭐';
     }
     
     document.getElementById('resultMessage').textContent = message;
     document.getElementById('resultStars').textContent = stars;
+    
+    // Mostrar também a pontuação máxima possível
+    console.log(`Pontuação final: ${finalScore}/${maxScore} - ${stars}`);
+}
+
+// Modal helpers
+function showContinueModal(finalScore, maxScore) {
+    const modal = document.getElementById('continueModal');
+    const msg = document.getElementById('modalMessage');
+    if (!modal || !msg) return;
+    msg.textContent = `Pontos atuais: ${finalScore}/${maxScore}. Deseja continuar e girar novamente a roleta?`;
+    modal.style.display = 'flex';
+}
+
+function hideContinueModal() {
+    const modal = document.getElementById('continueModal');
+    if (!modal) return;
+    modal.style.display = 'none';
 }
 
 // Compartilhar resultado
 function shareResult() {
     const finalScore = gameState.score;
     const text = 'Acabei de fazer ' + finalScore + ' pontos no Signal Quiz! 🏆 Teste seus conhecimentos também!';
-    
+
     // Verificar se a API de compartilhamento está disponível
     if (navigator.share) {
         navigator.share({
@@ -1104,15 +1216,279 @@ function restartGame() {
     gameState.currentQuestionIndex = 0;
     gameState.questions = [];
     gameState.selectedTopic = null;
-    
+    gameState.availableTopics = Object.keys(questionsBank);
+    gameState.maxPossibleScore = 0;
+
     // Resetar elementos da interface
     document.getElementById('score').textContent = '0';
     document.getElementById('progressFill').style.width = '0%';
     document.getElementById('topicName').textContent = '---';
-    
+
     // Voltar para roleta
     showScreen('roulette');
+    drawRoulette();
 }
 
 // Log para confirmar carregamento
 console.log('script.js carregado com sucesso!');
+
+
+// ============================================
+// NAVEGAÇÃO POR TECLADO
+// ============================================
+
+// Variáveis para navegação por teclado
+let keyboardNavigation = {
+    modalOption: 0, // 0 = Continuar, 1 = Encerrar
+    modalVisible: false
+};
+
+// Listener global de teclado
+document.addEventListener('keydown', function(event) {
+    const currentScreen = gameState.currentScreen;
+    
+    // TELA DE BOAS-VINDAS - Enter para iniciar
+    if (currentScreen === 'welcome') {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            startGame();
+        }
+    }
+    
+    // TELA DA ROLETA - Enter para girar
+    else if (currentScreen === 'roulette') {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            const spinButton = document.getElementById('spinButton');
+            if (spinButton && !spinButton.disabled) {
+                spinRoulette();
+            }
+        }
+    }
+    
+    // TELA DE PERGUNTAS - Teclas 1-4 para responder
+    else if (currentScreen === 'question') {
+        const buttons = document.querySelectorAll('.answer-button');
+        
+        // Verificar se os botões ainda estão habilitados (pergunta não respondida)
+        const isAnswered = buttons.length > 0 && buttons[0].disabled;
+        
+        if (!isAnswered && buttons.length > 0) {
+            switch(event.key) {
+                case '1':
+                    event.preventDefault();
+                    if (buttons[0]) buttons[0].click();
+                    break;
+                case '2':
+                    event.preventDefault();
+                    if (buttons[1]) buttons[1].click();
+                    break;
+                case '3':
+                    event.preventDefault();
+                    if (buttons[2]) buttons[2].click();
+                    break;
+                case '4':
+                    event.preventDefault();
+                    if (buttons[3]) buttons[3].click();
+                    break;
+            }
+        }
+    }
+    
+    // TELA DE RESULTADO - Enter para jogar novamente
+    else if (currentScreen === 'result') {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            restartGame();
+        }
+    }
+    
+    // MODAL DE CONTINUAR/ENCERRAR - Setas e Enter
+    if (keyboardNavigation.modalVisible) {
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+            event.preventDefault();
+            // Alternar entre opções
+            keyboardNavigation.modalOption = keyboardNavigation.modalOption === 0 ? 1 : 0;
+            updateModalHighlight();
+        }
+        
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            if (keyboardNavigation.modalOption === 0) {
+                // Continuar
+                const continueBtn = document.getElementById('modalContinueBtn');
+                if (continueBtn) continueBtn.click();
+            } else {
+                // Encerrar
+                const finishBtn = document.getElementById('modalFinishBtn');
+                if (finishBtn) finishBtn.click();
+            }
+        }
+        
+        // Tecla ESC para encerrar
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            const finishBtn = document.getElementById('modalFinishBtn');
+            if (finishBtn) finishBtn.click();
+        }
+    }
+});
+
+// Atualizar destaque visual do modal
+function updateModalHighlight() {
+    const continueBtn = document.getElementById('modalContinueBtn');
+    const finishBtn = document.getElementById('modalFinishBtn');
+    
+    if (continueBtn && finishBtn) {
+        if (keyboardNavigation.modalOption === 0) {
+            continueBtn.style.transform = 'scale(1.1)';
+            continueBtn.style.boxShadow = '0 0 20px rgba(108, 99, 255, 0.8)';
+            continueBtn.style.border = '3px solid #6C63FF';
+            
+            finishBtn.style.transform = 'scale(1)';
+            finishBtn.style.boxShadow = 'none';
+            finishBtn.style.border = 'none';
+        } else {
+            finishBtn.style.transform = 'scale(1.1)';
+            finishBtn.style.boxShadow = '0 0 20px rgba(108, 99, 255, 0.8)';
+            finishBtn.style.border = '3px solid #6C63FF';
+            
+            continueBtn.style.transform = 'scale(1)';
+            continueBtn.style.boxShadow = 'none';
+            continueBtn.style.border = 'none';
+        }
+    }
+}
+
+// Sobrescrever funções do modal para integração com teclado
+const originalShowContinueModal = showContinueModal;
+showContinueModal = function(finalScore, maxScore) {
+    originalShowContinueModal(finalScore, maxScore);
+    keyboardNavigation.modalVisible = true;
+    keyboardNavigation.modalOption = 0; // Começar destacando "Continuar"
+    
+    // Pequeno delay para garantir que os botões foram renderizados
+    setTimeout(updateModalHighlight, 100);
+};
+
+const originalHideContinueModal = hideContinueModal;
+hideContinueModal = function() {
+    originalHideContinueModal();
+    keyboardNavigation.modalVisible = false;
+    keyboardNavigation.modalOption = 0;
+};
+
+// Adicionar indicadores visuais de teclas nos botões
+function addKeyboardIndicators() {
+    // Tela de boas-vindas
+    const startButton = document.querySelector('.start-button');
+    if (startButton) {
+        startButton.setAttribute('title', 'Pressione ENTER para iniciar');
+    }
+    
+    // Botão da roleta
+    const spinButton = document.getElementById('spinButton');
+    if (spinButton) {
+        spinButton.setAttribute('title', 'Pressione ENTER para girar');
+    }
+}
+
+
+// Adicionar indicadores no modal
+function addModalKeyboardIndicators() {
+    const continueBtn = document.getElementById('modalContinueBtn');
+    const finishBtn = document.getElementById('modalFinishBtn');
+    
+    if (continueBtn) {
+        continueBtn.setAttribute('title', 'Use ← → para navegar e ENTER para confirmar');
+    }
+    if (finishBtn) {
+        finishBtn.setAttribute('title', 'Use ← → para navegar e ENTER para confirmar');
+    }
+}
+
+// Observer para adicionar indicadores quando as telas mudam
+const screenObserver = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+            const target = mutation.target;
+            if (target.classList.contains('active')) {
+                if (target.id === 'question-screen') {
+                    setTimeout(addAnswerIndicators, 100);
+                }
+                if (target.id === 'welcome-screen') {
+                    setTimeout(addKeyboardIndicators, 100);
+                }
+                if (target.id === 'roulette-screen') {
+                    setTimeout(addKeyboardIndicators, 100);
+                }
+            }
+        }
+    });
+});
+
+// Observar mudanças nas telas
+document.querySelectorAll('.screen').forEach(screen => {
+    screenObserver.observe(screen, { attributes: true });
+});
+
+// Adicionar indicadores iniciais
+setTimeout(addKeyboardIndicators, 500);
+
+// Adicionar indicadores do modal quando ele aparecer
+const modalObserver = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+            const modal = document.getElementById('continueModal');
+            if (modal && modal.style.display === 'flex') {
+                setTimeout(addModalKeyboardIndicators, 100);
+            }
+        }
+    });
+});
+
+const modal = document.getElementById('continueModal');
+if (modal) {
+    modalObserver.observe(modal, { attributes: true });
+}
+
+// Adicionar CSS para os indicadores de teclado
+const keyboardStyle = document.createElement('style');
+keyboardStyle.textContent = `
+    .key-indicator {
+        display: inline-block;
+        background: var(--color-primary-purple, #6C63FF);
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-right: 10px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: center;
+        font-family: var(--font-secondary, 'Poppins', sans-serif);
+    }
+    
+    .answer-button:disabled .key-indicator {
+        opacity: 0.5;
+    }
+    
+    @media (max-width: 768px) {
+        .key-indicator {
+            width: 20px;
+            height: 20px;
+            font-size: 10px;
+            line-height: 20px;
+            margin-right: 8px;
+        }
+    }
+`;
+document.head.appendChild(keyboardStyle);
+
+console.log('Navegação por teclado ativada!');
+console.log('Controles:');
+console.log('- ENTER: Iniciar jogo / Girar roleta / Confirmar');
+console.log('- 1, 2, 3, 4: Selecionar respostas');
+console.log('- ← →: Navegar no modal');
+console.log('- ESC: Fechar modal');
